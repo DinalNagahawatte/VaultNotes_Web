@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}About VaultNotes{% endblock %}
+
+{% block content %}
+<div class="row mt-5">
+    <div class="col-lg-8 offset-lg-2 text-center">
+        <h1 class="display-4 mb-4">About VaultNotes</h1>
+        <p class="lead">Your secure, simple, and personal space for digital note-taking.</p>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-lg-6 mb-4">
+        <h2 style="color:DarkBlue;">Our Mission</h2>
+        <br>
+       <figure>
+      <blockquote class="blockquote border-start border-primary border-5 ps-3" style="font-size: 1.15rem;">
+        <p>"Your thoughts should be private and always accessible."</p>
+      </blockquote>
+      <figcaption class="blockquote-footer" >
+        The core philosophy of VaultNotes
+      </figcaption>
+    </figure>
+
+    <h5 class="fw-bold mt-4 mb-3">Focus on Simplicity and Security:</h5>
+
+    <p style="text-align: justify;">
+        VaultNotes provides a clean, distraction-free interface where you can quickly jot down ideas, reminders, and important information. We ensure your digital sanctuary remains simple to use, so you can focus entirely on capturing your thoughts.
+    </p>
+
+    <p style="text-align: justify;">
+        Unlike generic note apps, VaultNotes prioritizes security and reliability, ensuring your data is protected while making it incredibly easy to manage and retrieve your notes whenever and wherever you need them.
+    </p>
+    </div>
+
+
+<div class="col-lg-6 mb-4">
+    <h2 style="color:DarkBlue;">What We Give You</h2>
+    <br>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <i class="fa fa-lock text-primary me-2" style="margin-right: 10px;"></i>
+            <strong>Security First:</strong> Your notes are protected behind a secure login, giving you peace of mind that your private information stays private.
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-pencil-square-o text-primary me-2" style="margin-right: 10px;"></i>
+            <strong>Effortless Organization:</strong> Create and manage your notes with a minimal, intuitive design that gets out of your way.
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-mobile text-primary me-2" style="margin-right: 10px;"></i>
+            <strong>Anywhere Access:</strong> Since it's web-based, you can log in and access your personal notes from any device with a browser.
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-trash text-primary me-2" style="margin-right: 10px;"></i>
+            <strong>Control:</strong> You have full control, including the ability to permanently delete notes with a simple confirmation, as seen in your code.
+        </li>
+    </ul>
+</div>
+</div>
+
+<div class="row mt-5 pt-4 border-top">
+    <div class="col-lg-9 offset-lg-2">
+        <h2 class="text-center mb-4">Meet The Creator</h2>
+
+        <div class="card p-4 shadow-sm creator-card-gradient">
+            <div class="card-body text-center">
+                <img src="/static/images/Dinal.jpg" alt="Creator Profile Picture" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+
+                <h4 class="card-title">Dinal Kenula Nagahawatte</h4>
+                <p class="card-text text-muted">Developer & Founder of VaultNotes</p>
+                <p class="card-text">
+                    I built VaultNotes because I needed a simple, reliable place to store my own ideas without the clutter and complexity of larger applications. As a developer, I believe privacy and ease-of-use are paramount. This project is a passion, constantly refined to offer the best possible experience for users who, like me, value security and simplicity in their digital tools.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5 pt-4 border-top">
+    <div class="col-12 text-center">
+        <p class="text-muted">
+            Ready to secure your thoughts?
+            <a href="/sign-up" class="btn btn-sm btn-outline-primary ml-2" style="margin-left: 5px;">Join VaultNotes Today</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

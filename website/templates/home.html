@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<br>
+<div class="container">
+    <h1 align="center">My Notes</h1>
+    <br>
+
+    {% for note in user.notes %}
+
+    <div class="card shadow-sm mb-3 note-card">
+        <div class="card-body">
+
+            <div class="note-content">
+                {{ note.data | safe }}
+            </div>
+
+            {% if note.date %}
+            <small class="text-muted note-date">
+                Added on: {{ note.date.strftime('%Y-%m-%d at %I:%M %p') }}
+            </small>
+            {% endif %}
+
+            <button type="button" class="close delete-btn" onclick="deleteMyNote({{ note.id }})">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+</ul>
+<form method="POST">
+  <textarea name="note" id="note_input" class="form-control" rows="10"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Add Note</button>
+  </div>
+</form>
+{% endblock %}
