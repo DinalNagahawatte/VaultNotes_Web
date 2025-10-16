@@ -5,5 +5,11 @@ from flask_moment import Moment
 app = create_app()
 moment = Moment(app)
 
+@app.route('/')
+def about():
+    return render_template('about.html')
+
+
 if __name__ == '__main__':
-    app.run(debug=True) #start the web server in development mode
+
+    app.run() #start the web server in development mode
